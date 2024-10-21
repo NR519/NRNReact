@@ -8,7 +8,7 @@ export default function FavColor(){
     const [bgwarna, setBGWarna] = useState("white");
 
     return (
-        <div className="container mx-auto p-4 text-center">
+        <div className={`container mx-auto p-4 text-center bg-${bgwarna}`}>
             <h1 className={`text-${bgwarna}`}>Warna Favorit saya adalah {warna}</h1>
             <hr className="m-10" />
             <p className="text-black">Ubah state warna ke warna:</p>
